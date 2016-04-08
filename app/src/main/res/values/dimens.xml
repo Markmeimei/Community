@@ -1,0 +1,45 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- dip -->
+    <dimen name="dimen_0">0.0dip</dimen>
+    <dimen name="dimen_0.5">0.5dip</dimen>
+    <dimen name="dimen_1">1dip</dimen>
+    <dimen name="dimen_1.5">1.5dip</dimen>
+    <dimen name="dimen_2">2dip</dimen>
+    <dimen name="dimen_4">4dip</dimen>
+    <dimen name="dimen_5">5dip</dimen>
+    <dimen name="dimen_7">7dip</dimen>
+    <dimen name="dimen_8">8dip</dimen>
+    <dimen name="dimen_10">10dip</dimen>
+    <dimen name="dimen_12">12dip</dimen>
+    <dimen name="dimen_14">14dip</dimen>
+    <dimen name="dimen_15">15dip</dimen>
+    <dimen name="dimen_16">16dip</dimen>
+    <dimen name="dimen_18">18dip</dimen>
+    <dimen name="dimen_20">20dip</dimen>
+    <dimen name="dimen_25">25dip</dimen>
+    <dimen name="dimen_30">30dip</dimen>
+    <dimen name="dimen_40">40dip</dimen>
+    <dimen name="dimen_50">50dip</dimen>
+    <dimen name="dimen_60">60dip</dimen>
+    <dimen name="dimen_70">70dip</dimen>
+    <dimen name="dimen_100">100dip</dimen>
+    <dimen name="dimen_150">150dip</dimen>
+    <dimen name="dimen_200">200dip</dimen>
+    <dimen name="dimen_300">300dip</dimen>
+    <!-- sp -->
+    <dimen name="dimen_12sp">12sp</dimen>
+    <dimen name="dimen_14sp">14sp</dimen>
+    <dimen name="dimen_15sp">15sp</dimen>
+    <dimen name="dimen_16sp">16sp</dimen>
+    <dimen name="dimen_18sp">18sp</dimen>
+    <dimen name="dimen_20sp">20sp</dimen>
+    <dimen name="dimen_30sp">30sp</dimen>
+</resources>

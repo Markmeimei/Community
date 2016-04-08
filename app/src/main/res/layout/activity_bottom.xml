@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent">
+    <LinearLayout
+        android:id="@+id/bottom_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:background="@color/white_"
+        android:orientation="vertical">
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_0.5"
+            android:background="@color/line_color"/>
+        <Button
+            android:id="@+id/bottom_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/selector_btn"
+            android:textColor="@color/white_"
+            android:textSize="@dimen/dimen_18"
+            android:layout_margin="@dimen/dimen_5"/>
+    </LinearLayout>
+</LinearLayout>

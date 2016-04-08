@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white_">#FFFFFF</color><!--白色 -->
+    <color name="text_color1">#323232</color>
+    <color name="text_color2">#646464</color>
+    <color name="text_color3">#b3b3b3</color>
+    <color name="text_color4">#f0f0f0</color>
+    <color name="line_color">#D6D6D6</color>
+    <color name="btn_logout_pressed">#DA5A4D</color>
+    <color name="main_color">#1487df</color>
+    <color name="steelblue">#4682B4</color><!--钢兰色 -->
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="text_content">#ffa19d94</color>
+    <color name="text_selected">#888</color>
+    <color name="blue">#ff169aff</color>
+    <color name="red">#FF0000</color><!--红色 -->
+</resources>
