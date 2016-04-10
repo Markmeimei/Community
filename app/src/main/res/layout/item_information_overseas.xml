@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/item_information_overseas_ReduceItem"
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:paddingRight="@dimen/dimen_5"
+        android:src="@mipmap/add_contact" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center_vertical"
+                android:text="关系"
+                android:textColor="@color/text_color1"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <TextView
+                android:id="@+id/item_information_overseas_Relation"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="选择"
+                android:singleLine="true"
+                android:textSize="@dimen/dimen_16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0.5"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center_vertical"
+                android:text="姓名"
+                android:textColor="@color/text_color1"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <EditText
+                android:id="@+id/item_information_overseas_Name"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="请填写姓名"
+                android:singleLine="true"
+                android:textSize="@dimen/dimen_16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0.5"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center_vertical"
+                android:text="性别"
+                android:textColor="@color/text_color1"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <RadioGroup
+                android:id="@+id/item_information_overseas_Sex"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/item_information_overseas_Men"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男"
+                    android:textColor="@color/text_color1"
+                    android:textSize="@dimen/dimen_16sp" />
+
+                <RadioButton
+                    android:id="@+id/item_information_overseas_Women"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="女"
+                    android:textColor="@color/text_color1"
+                    android:textSize="@dimen/dimen_16sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0.5"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:gravity="center_vertical"
+                android:text="护照/身份证号码"
+                android:textColor="@color/text_color1"
+                android:textSize="@dimen/dimen_16sp"/>
+
+            <EditText
+                android:id="@+id/item_information_overseas_IdentityNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textSize="@dimen/dimen_16sp"
+                android:hint="请填写护照/身份证号码" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:gravity="center_vertical"
+                android:text="在华住址"
+                android:textColor="@color/text_color1"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <EditText
+                android:id="@+id/item_information_overseas_Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="请填写在华住址"
+                android:singleLine="true"
+                android:textSize="@dimen/dimen_16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

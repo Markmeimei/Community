@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color4">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        app:layout_collapseMode="pin" />
+
+    <include
+        android:id="@+id/info_bottom"
+        layout="@layout/activity_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/info_bottom"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_5"
+                app:cardBackgroundColor="@color/white_">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen_10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_50"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="@dimen/dimen_0"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:gravity="center_vertical"
+                            android:text="房主姓名"
+                            android:textColor="@color/text_color1"
+                            android:textSize="@dimen/dimen_16sp" />
+
+                        <EditText
+                            android:id="@+id/activity_information_overseas_Name"
+                            android:layout_width="@dimen/dimen_0"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:hint="请填写姓名"
+                            android:singleLine="true"
+                            android:textSize="@dimen/dimen_16sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_0.5"
+                        android:background="@color/line_color" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_50"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="@dimen/dimen_0"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:gravity="center_vertical"
+                            android:text="与房主关系"
+                            android:textColor="@color/text_color1"
+                            android:textSize="@dimen/dimen_16sp" />
+
+                        <EditText
+                            android:id="@+id/activity_information_overseas_Relation"
+                            android:layout_width="@dimen/dimen_0"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:hint="请填写关系"
+                            android:singleLine="true"
+                            android:textSize="@dimen/dimen_16sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_0.5"
+                        android:background="@color/line_color" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_50"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="@dimen/dimen_0"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:gravity="center_vertical"
+                            android:text="居住类型"
+                            android:textColor="@color/text_color1"
+                            android:textSize="@dimen/dimen_16sp" />
+
+                        <RadioGroup
+                            android:id="@+id/activity_information_overseas_LiveType"
+                            android:layout_width="@dimen/dimen_0"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/activity_information_overseas_Permanent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="常住"
+                                android:textColor="@color/text_color1"
+                                android:textSize="@dimen/dimen_16sp" />
+
+                            <RadioButton
+                                android:id="@+id/activity_information_overseas_Temporary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="暂住"
+                                android:textColor="@color/text_color1"
+                                android:textSize="@dimen/dimen_16sp" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_0.5"
+                        android:background="@color/line_color" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_50"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="@dimen/dimen_0"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:gravity="center_vertical"
+                            android:text="住房性质"
+                            android:textColor="@color/text_color1"
+                            android:textSize="@dimen/dimen_16sp" />
+
+                        <RadioGroup
+                            android:id="@+id/activity_information_overseas_HousingProperty"
+                            android:layout_width="@dimen/dimen_0"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/activity_information_overseas_RadioButton1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="自购"
+                                android:textColor="@color/text_color1"
+                                android:textSize="@dimen/dimen_16sp" />
+
+                            <RadioButton
+                                android:id="@+id/activity_information_overseas_RadioButton2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="租赁"
+                                android:textColor="@color/text_color1"
+                                android:textSize="@dimen/dimen_16sp" />
+
+                            <RadioButton
+                                android:id="@+id/activity_information_overseas_RadioButton3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="借住"
+                                android:textColor="@color/text_color1"
+                                android:textSize="@dimen/dimen_16sp" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <include layout="@layout/info_overseas_basic" />
+            <include layout="@layout/info_overseas_certificate" />
+            <include layout="@layout/info_overseas_live" />
+            <include layout="@layout/info_overseas_relation" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

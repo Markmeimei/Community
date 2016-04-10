@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_5"
+        app:cardBackgroundColor="@color/white_">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:gravity="center"
+                android:text="居住情况"
+                android:textColor="@color/btn_logout_pressed"
+                android:textSize="@dimen/dimen_20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical"
+                    android:text="在华单位"
+                    android:textColor="@color/text_color1"
+                    android:textSize="@dimen/dimen_16sp" />
+
+                <EditText
+                    android:id="@+id/info_overseas_CompanyName"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="请填写单位名称"
+                    android:singleLine="true"
+                    android:textSize="@dimen/dimen_16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical"
+                    android:text="职业"
+                    android:textColor="@color/text_color1"
+                    android:textSize="@dimen/dimen_16sp" />
+
+                <EditText
+                    android:id="@+id/info_overseas_Occupation"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="请填写职业"
+                    android:singleLine="true"
+                    android:textSize="@dimen/dimen_16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical"
+                    android:text="在华住址"
+                    android:textColor="@color/text_color1"
+                    android:textSize="@dimen/dimen_16sp" />
+
+                <EditText
+                    android:id="@+id/info_overseas_Address"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="请填写在华住址"
+                    android:singleLine="true"
+                    android:textSize="@dimen/dimen_16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical"
+                    android:text="单位联系电话"
+                    android:textColor="@color/text_color1"
+                    android:textSize="@dimen/dimen_16sp" />
+
+                <EditText
+                    android:id="@+id/info_overseas_CompanyPhone"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="请填写单位联系电话"
+                    android:singleLine="true"
+                    android:textSize="@dimen/dimen_16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_50"
+                    android:gravity="center_vertical"
+                    android:text="单位外管联络员或接待人"
+                    android:textColor="@color/text_color1"
+                    android:textSize="@dimen/dimen_16sp" />
+
+                <EditText
+                    android:id="@+id/info_overseas_Receiver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="请填写接待人"
+                    android:singleLine="true"
+                    android:textSize="@dimen/dimen_16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_50"
+                    android:gravity="center_vertical"
+                    android:text="接待人联系电话"
+                    android:textColor="@color/text_color1"
+                    android:textSize="@dimen/dimen_16sp" />
+
+                <EditText
+                    android:id="@+id/info_overseas_ReceiverPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="请填写接待人联系电话"
+                    android:singleLine="true"
+                    android:textSize="@dimen/dimen_16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_5"
+        app:cardBackgroundColor="@color/white_">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:gravity="center"
+                android:text="证件变更情况"
+                android:textColor="@color/btn_logout_pressed"
+                android:textSize="@dimen/dimen_20sp" />
+
+            <EditText
+                android:id="@+id/info_overseas_PapersChange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="请填写证件变更情况"
+                android:textSize="@dimen/dimen_16sp" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

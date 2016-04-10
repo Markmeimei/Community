@@ -58,6 +58,7 @@ import com.amap.api.services.geocoder.RegeocodeAddress;
 import com.amap.api.services.geocoder.RegeocodeQuery;
 import com.amap.api.services.geocoder.RegeocodeResult;
 import com.example.community.activity.Information_House;
+import com.example.community.activity.Information_Overseas;
 import com.example.community.activity.login.LoginActivity;
 import com.example.community.bean.Version_Object;
 import com.example.community.constant.ConstantURL;
@@ -96,6 +97,10 @@ public class MainActivity extends AppCompatActivity
     DrawerLayout drawerLayout;
     @Bind(R.id.re_project)
     RelativeLayout reProject;
+    @Bind(R.id.rv_inquiry)
+    RelativeLayout rvInquiry;
+    @Bind(R.id.re_attendance)
+    RelativeLayout reAttendance;
 
     //
     private AMap aMap;
@@ -126,7 +131,21 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, Information_House.class));
             }
-        } );
+        });
+        rvInquiry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Information_Overseas.class));
+            }
+        });
+        reAttendance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
