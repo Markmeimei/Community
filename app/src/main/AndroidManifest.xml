@@ -58,6 +58,11 @@
             android:label="@string/app_name"
             android:windowSoftInputMode="adjustUnspecified|stateHidden"
             android:theme="@style/AppTheme.NoActionBar"/>
+
+        <!--场所单位-->
+        <activity android:name=".activity.Information.Information_Company" />
+        <!--境外单位-->
+        <activity android:name=".activity.Information.Information_foreign_company" />
         <!-- 检测更新 -->
         <activity android:name=".utils.checkupdate.NotificationUpdateActivity"
             android:screenOrientation="portrait">
