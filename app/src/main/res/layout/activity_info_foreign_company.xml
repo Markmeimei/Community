@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar_company"
+            android:id="@+id/toolbar_foreign_company"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
@@ -38,14 +38,9 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:orientation="vertical">
-            <!-- 基本信息 -->
-            <include layout="@layout/info_company_information" />
-            <!-- 营业信息 -->
-            <include layout="@layout/info_company_business" />
-            <!-- 安全系统 -->
-            <include layout="@layout/info_company_safe" />
-            <!--涉外信息-->
-            <include layout="@layout/info_company_invest" />
+
+            <!--境外单位-->
+            <include layout="@layout/info_foreign_company" />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

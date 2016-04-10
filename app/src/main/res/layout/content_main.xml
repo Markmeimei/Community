@@ -172,7 +172,41 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/dimen_0.5"
             android:background="@color/line_color" />
+
+        <RelativeLayout
+            android:id="@+id/rl_foreign_company"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/iv_avatar4"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/fragment_project_manage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/iv_avatar4"
+                android:text="境外单位"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0.5"
+            android:background="@color/line_color" />
+
     </LinearLayout>
+
+
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"

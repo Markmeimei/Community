@@ -57,6 +57,8 @@ import com.amap.api.services.geocoder.GeocodeSearch;
 import com.amap.api.services.geocoder.RegeocodeAddress;
 import com.amap.api.services.geocoder.RegeocodeQuery;
 import com.amap.api.services.geocoder.RegeocodeResult;
+import com.example.community.activity.Information.Information_Company;
+import com.example.community.activity.Information.Information_foreign_company;
 import com.example.community.activity.Information_House;
 import com.example.community.activity.Information_Overseas;
 import com.example.community.activity.login.LoginActivity;
@@ -101,6 +103,10 @@ public class MainActivity extends AppCompatActivity
     RelativeLayout rvInquiry;
     @Bind(R.id.re_attendance)
     RelativeLayout reAttendance;
+    @Bind(R.id.re_attendance)
+    RelativeLayout locationCompany;//场所单位单位信息
+    @Bind(R.id.rl_foreign_company)
+    RelativeLayout foreignCompany;// 境外单位
 
     //
     private AMap aMap;
@@ -126,6 +132,7 @@ public class MainActivity extends AppCompatActivity
         context = MainActivity.this;
         setSupportActionBar(toolbar);
 
+        // 地址房屋信息
         reProject.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -146,6 +153,21 @@ public class MainActivity extends AppCompatActivity
         });
 
 
+        } );
+        // 住所单位信息
+        locationCompany.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Information_Company.class));
+            }
+        });
+        // 境外单位
+        foreignCompany.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Information_foreign_company.class));
+            }
+        });
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
